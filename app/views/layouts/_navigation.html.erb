@@ -15,8 +15,7 @@
             </ul>
             <ul class="nav navbar-right col-md-6">
                 <li class="col-md-8 user-name text-right">
-                <%= current_user.full_name.present? ? current_user.full_name : current_user.email %>
-                </li>
+                <%= current_user.full_name.present? ? current_user.full_name : current_user.email %></li>
                 <li class="col-md-4 logout"><%= link_to "Log out", destroy_user_session_path, class: "btn btn-xs btn-danger", method: :delete %></li>
             </ul>
             </div>
